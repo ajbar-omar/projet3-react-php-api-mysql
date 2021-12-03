@@ -2,18 +2,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight:bold;
+  
 }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&family=Teko:wght@300&display=swap');
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color:  #ccffff;
+ background-image:url('background.png') ;
+background-repeat: no-repeat;
+background-size: 1280px 582px;
+
   padding: 20px;
   color: #3b5441;
+  overflow: hidden;
 }
 
 code {
@@ -27,12 +31,15 @@ code {
   padding: 20px;
   max-width: 400px;
   margin: 0 auto;
-  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
 
 ._loginRegister h1{
   text-align: center;
   margin: 0 0 20px 0;
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  color: #ffb703;
+
 }
 
 ._loginRegister .form-control{
@@ -43,7 +50,12 @@ code {
 
 ._loginRegister .form-control label{
   font-weight: bold;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  font-size: 24px;
+  font-family: 'Teko', sans-serif;
+  color: #ffb703;
+
 }
 
 [type="text"],
@@ -51,11 +63,13 @@ code {
 [type="password"]{
   padding:7px 10px;
   outline: none;
-  margin-bottom: 5px;
-  font-size: 16px;
-  border-radius: 13px;
-  
+  margin-bottom: 28px;
+  font-size: 16px;  
     border: 1px solid rgba(0, 0, 0, .3);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
 }
 
 [type="text"]:hover,
@@ -70,16 +84,15 @@ code {
 
 ._navBtn button,
 [type="submit"]{
-  background: #4b48ff;
-  color: #ffffff;
+  background: #ffb703;
+  width: 80px;
+  color: #000000;
+  font-weight: bolder;
   border: 1px solid rgba(0, 0, 0, .1);
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 20px;
- 
-  
-  margin-top: 5px;
+  margin-top: 22px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   outline: none;
 }
@@ -89,7 +102,6 @@ code {
 }
 
 ._navBtn{
-  border-top: 1px solid #dedede;
   margin-top: 5px;
 }
 ._navBtn button{
@@ -130,19 +142,19 @@ code {
 }
 .userInfo button{
   margin-top: 5px;
-  background: #ff304f;
+  background: #f7b103;
   color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
-  border: 5px solid rgba(0, 0, 0, .1);
+  border: 2px solid ;
   outline: none;
   border-radius: 3px;
   outline: none;
   cursor: pointer;
-  transition: background .3s;
+  transition: .3s;
 }
 .userInfo button:hover{
-  border-color: #ff304f;
-  color: #ff304f;
-  background: #ffffff;
+  border-color: #000000;
+    color: #ffffff;
+    background: #000000;
 }

@@ -5,7 +5,7 @@ require __DIR__.'/../jwt/SignatureInvalidException.php';
 require __DIR__.'/../jwt/BeforeValidException.php';
 
 use \Firebase\JWT\JWT;
-
+ 
 class JwtHandler {
     protected $jwt_secrect;
     protected $token;

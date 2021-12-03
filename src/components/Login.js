@@ -37,6 +37,7 @@ function Login(){
             });
             localStorage.setItem('loginToken', data.token);
             await isLoggedIn();
+            console.log(data.success)
         }
         else{
             setState({
@@ -78,7 +79,7 @@ function Login(){
                 </div>
             </form>
             <div className="_navBtn">
-                <button onClick={toggleNav}>Register</button>
+              <p>  <a onClick={toggleNav}>you don't have an account!</a>  </p>
             </div>
         </div>
     );

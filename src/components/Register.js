@@ -77,7 +77,7 @@ function Register(){
                 </div>
             </form>
             <div className="_navBtn">
-                <button  onClick={toggleNav}>Login</button>
+             <p>   <a  onClick={toggleNav}>Already have an a account</a> </p>
             </div>
         </div>
     );
